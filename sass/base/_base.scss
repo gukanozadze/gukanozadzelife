@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    font-size: 62.5%;
+
+    @include respond(tablet_land){
+        font-size: 56.2%;
+    }
+
+    @include respond(tablet_port){
+        font-size: 50%;
+        
+    }
+
+    @include respond(phone){
+        font-size: 50%;
+        
+    }
+}
+
+
+body {
+    position: relative;
+    padding: 3rem;
+    padding-bottom: 0rem;
+    color: $color-grey-dark;
+    overflow-x: hidden;
+
+    @include respond(tablet_land){
+        padding: 0rem;
+        
+    }
+}
+
+main{
+    background: $color-grey-light-1;
+}
+
+
+
+
+
+

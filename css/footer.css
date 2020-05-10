@@ -1,0 +1,153 @@
+/* ****************************************************/
+/* FOOTER ***************************************/
+/* ****************************************************/
+footer{
+    padding: 40px 0px;
+    background: #272727;
+    
+}
+
+footer > div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer ul{
+    font-size: 16px;
+    list-style: none;
+    padding: 10px;
+}
+
+footer ul li{
+    display: inline-block;
+    margin-right:20px;
+
+}
+footer ul li:last-of-type{
+    margin-right:0px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #e67d22
+}
+
+.social-links li ion-icon{
+    font-size: 25px;
+}
+
+.social-links li img{
+    height: 25px;
+
+}
+footer p{
+    margin-top: 40px;
+    color: #e67d22;
+    font-weight: 400;
+    text-align: center;
+    font-size: 17px;
+}
+
+
+
+
+.bg-modal{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-modal__content{
+    width: 600px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15rem 30px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.bg-modal__content--close ion-icon{
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.bg-modal__content .contact-info{
+
+    font-size: 25px;
+}
+
+.bg-modal__content .contact-info ion-icon{
+    margin-right: 15px;
+    margin-bottom: -2px;
+}
+
+#footer-contact{
+    cursor: pointer;
+    color: #e67d22
+}
+
+@media (max-width: 900px){
+    footer p{
+        font-size: 15px;
+    }
+
+    .bg-modal__content{
+        width: 75%;
+        padding: 10rem 10px;
+    }
+
+    .bg-modal__content .contact-info{
+    
+        font-size: 20px
+    }
+
+    .bg-modal__content--close ion-icon{
+
+        top: 20px;
+        right: 20px;
+    }
+    
+    .bg-modal__content .contact-info ion-icon{
+        font-size: 20px;
+
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 600px){
+    .bg-modal__content--close ion-icon{
+
+        top: 15px;
+        right: 15px;
+    }
+
+    .bg-modal__content .contact-info{
+    
+        font-size: 18px
+    }
+
+    .bg-modal__content{
+        width: 85%;
+    }
+
+    .bg-modal__content .contact-info{
+    
+        font-size: 18px
+    }
+}

@@ -1,0 +1,31 @@
+.story{
+    position: relative;
+    font-size: $big_font_size;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba(0,0,0,.2);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 3rem 5rem;
+    transform: skewX(-10deg);
+
+    &__text{
+        transform: skewX(10deg);
+    }
+
+    @include respond(tablet_port){ width: 100%; }
+
+    @include respond(phone){
+        width: 100%;
+        transform: skewX(-5deg);
+
+        &__text{
+            transform: skewX(5deg);
+        }
+
+    }
+
+    
+
+
+}
